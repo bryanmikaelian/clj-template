@@ -1,5 +1,5 @@
 (ns user
-  (:require [venn.service :as service]
+  (:require [template.service :as service]
             [clojure.tools.namespace.repl :refer (refresh)]
             [com.stuartsierra.component :as component]))
 

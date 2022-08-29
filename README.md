@@ -1,3 +1,3 @@
-# venn
+# template
 
-a billing machine
+A template clj repo with some plugins. backed by `deps.edn`

@@ -1,7 +1,7 @@
-(ns venn.service
+(ns template.service
   (:require [com.stuartsierra.component :as component]
             [ring.adapter.jetty :as r]
-            [venn.http.api :refer [api]]))
+            [template.http.api :refer [api]]))
 
 (defrecord WebServer [handler port join server]
   component/Lifecycle
@@ -30,7 +30,8 @@
   (let [{:keys [handler port join]} config]
     (component/system-map
       :api (component/using 
-             (new-server handler port join)))))
+             (new-server handler port join)
+             []))))
 
 (defn start
   [config]
