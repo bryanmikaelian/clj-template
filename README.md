@@ -4,7 +4,7 @@ A template clj repo with some plugins that I like to use. backed by `deps.edn`
 
 Comes with:
 - `deps.edn`
-- `compojure` + `ring`
+- `compojure` + `ring` for a basic API Server with a healthcheck endpoint
 - `component`
 
 
